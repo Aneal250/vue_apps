@@ -1,6 +1,6 @@
 <template>
   <div id="appContainer">
-    <h1>ToDo List</h1>
+    <h1>VUE 3 Todo List</h1>
     <form @submit.prevent="addTodos()">
       <input v-model="newTodo" />
       <button class="waves-effect waves-light btn">Add ToDo</button>
