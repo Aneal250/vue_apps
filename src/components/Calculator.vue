@@ -54,7 +54,7 @@ export default {
         ".",
       ],
       operator: null,
-      previousCalculatorValue: ''
+      previousCalculatorValue: "",
     };
   },
   metthods: {
@@ -74,15 +74,14 @@ export default {
       if (["/", "*", "-", "+"].includes(n)) {
         this.operator = n;
         this.previousCalculatorValue = this.calculatorValue;
-        this.calculatorValue = '',
+        this.calculatorValue = "";
       }
 
-      if(n === '='){
+      if (n === "=") {
         this.calculatorValue = eval(
-            this.previousCalculatorValue + this.operator + this.calculatorValue
+          this.previousCalculatorValue + this.operator + this.calculatorValue
         );
-        this.previousCalculatorValue = '',
-        this.operator = null
+        (this.previousCalculatorValue = ""), (this.operator = null);
       }
     },
   },
