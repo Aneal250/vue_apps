@@ -1,15 +1,15 @@
 <template>
-  <div id="appContainer">
-    <h1>This is are Basic Vue Application</h1>
-    <ul>
-      <li>Todo Application Using Vue</li>
-    </ul>
+  <div>
+    <Calculator />
   </div>
 </template>
 <script>
-import { ref } from "vue";
+import Calculator from "./components/Calculator.vue";
 export default {
   name: "App",
+  components: {
+    Calculator,
+  },
 };
 </script>
 <style></style>
